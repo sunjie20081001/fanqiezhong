@@ -1,0 +1,15 @@
+{
+  "name": "番茄钟!",
+  "description": "番茄钟",
+  "version": "0.1",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "icons": {
+	  "16": "img/logo-16.png", 
+	  "48": "img/logo-48.png",
+	  "128": "img/logo-128.png" }
+}
