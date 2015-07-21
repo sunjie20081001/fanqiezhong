@@ -5,7 +5,8 @@ $(function(){
 	var time  = step * 25;   //秒计算,时长
 	var lefttime = time;
 	var timeIn = null;
-	
+	var notice = new Notice();
+	console.log(notice);
 	function render(){
 		var m = parseInt(lefttime/step);
 		var s = lefttime - m*step;
@@ -28,6 +29,7 @@ $(function(){
 			if(lefttime == 0){
 				state = "stop";
 				clearInterval(timeIn);
+				notice.create();
 			}else{
 				lefttime--;
 				render();
@@ -36,6 +38,7 @@ $(function(){
 		}
 	}
 	function stop(){
+		
 		if(timeIn){
 		clearInterval(timeIn);
 		state = 'stop';
@@ -71,6 +74,8 @@ $(function(){
 		}
 	});
 	
+	
+	
 	$('.j-start').click(function(){
 		run();
 	});
@@ -82,5 +87,7 @@ $(function(){
 	$('.j-reset').click(function(){
 		reset();
 	});
+	
+	
 	
 })
