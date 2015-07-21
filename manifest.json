@@ -8,6 +8,9 @@
       "scripts": ["background.js"]
     }
   },
+  "permissions":[
+    "notifications"
+  ],
   "icons": {
 	  "16": "img/logo-16.png", 
 	  "48": "img/logo-48.png",
