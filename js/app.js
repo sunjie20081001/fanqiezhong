@@ -2,7 +2,7 @@ $(function(){
 	//运行app
 	var state = "stop";
 	var step  = 60;  //时间步长
-	var time  = step * 25;   //秒计算,时长
+	var time  = step * 45;   //秒计算,时长
 	var lefttime = time;
 	var timeIn = null;
 	var notice = new Notice();
