@@ -8,10 +8,10 @@
 	Notice.prototype.create = function(){
 		chrome.notifications.create('notice', {
 			'type':'image',
-			'iconUrl':'../img/logo-16.png',
+			'iconUrl':'../img/logo-48.png',
 			'title': '时间到！',
 			'message': '时间到了，休息一下，喝杯茶',
-			'imageUrl':'../img/logo-48.png'
+			'imageUrl':'../img/notice.jpg'
 		});
 	}
 	

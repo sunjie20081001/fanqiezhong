@@ -6,7 +6,7 @@ $(function(){
 	var lefttime = time;
 	var timeIn = null;
 	var notice = new Notice();
-	console.log(notice);
+
 	function render(){
 		var m = parseInt(lefttime/step);
 		var s = lefttime - m*step;
